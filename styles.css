@@ -907,3 +907,84 @@ a {
         grid-template-columns: 1fr;
     }
 }
+
+
+/* --- ANTIGRAVITY MOBILE RESPONSIVENESS OVERRIDES --- */
+@media (max-width: 768px) {
+    .nav-menu {
+        position: fixed !important;
+        left: -100% !important;
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 30px !important;
+        padding-bottom: 80px !important;
+        transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1) !important;
+        background-color: rgba(255, 248, 240, 0.96) !important;
+        backdrop-filter: blur(15px) !important;
+        -webkit-backdrop-filter: blur(15px) !important;
+        border-top: 1px solid rgba(0, 0, 0, 0.08) !important;
+        z-index: 999 !important;
+    }
+    .nav-menu.active {
+        left: 0 !important;
+    }
+    .nav-link {
+        font-size: 1.25rem !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-highlights, .contact-ctas, .hero-buttons, .workspace-stats, .about-stats, .qualifications, .qual-list, .features-grid {
+        flex-direction: column !important;
+        gap: 15px !important;
+    }
+    .highlight-item, .feature-card {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2.1rem !important;
+        line-height: 1.25 !important;
+    }
+    
+    .hero-desc {
+        font-size: 0.95rem !important;
+        margin-bottom: 25px !important;
+    }
+
+    .hero-buttons {
+        flex-direction: column !important;
+        width: 100% !important;
+        gap: 10px !important;
+    }
+    
+    .hero-buttons .btn, .contact-ctas .btn {
+        width: 100% !important;
+    }
+    
+    .btn-phone .phone-text {
+        display: none !important;
+    }
+    
+    .btn-phone {
+        padding: 12px 14px !important;
+        border-radius: 50% !important;
+        font-size: 1rem !important;
+        aspect-ratio: 1 !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    
+    .logo {
+        font-size: 1rem !important;
+    }
+    .logo-icon {
+        font-size: 1.2rem !important;
+    }
+}
